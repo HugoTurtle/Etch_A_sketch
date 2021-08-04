@@ -13,8 +13,14 @@ h1 {
     font-size: 70px;
     margin: 40px 0px 60px 0px;
     font-family: 'Play', sans-serif;
-    -webkit-text-stroke: 0.5px rgb(141, 139, 139);   
+    -webkit-text-stroke: 1px rgb(214, 214, 214);   
 }
 #grid {
-
+    margin: auto;
+    display: flex;
+    height: 550px;
+    width: 550px;
+    background-color: white;
+    border: 5px solid #FFFF00;
+    border-radius: 5px;
 }
