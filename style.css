@@ -17,10 +17,16 @@ h1 {
 }
 #grid {
     margin: auto;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     height: 550px;
     width: 550px;
     background-color: white;
     border: 5px solid #FFFF00;
     border-radius: 5px;
+}
+.gridBox {
+    background: white;
+    border: 1px solid black;
 }
