@@ -18,8 +18,8 @@ h1 {
 #grid {
     margin: auto;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 550px;
     width: 550px;
     background-color: white;
@@ -27,6 +27,7 @@ h1 {
     border-radius: 5px;
 }
 .gridBox {
+    display: inherit;
     background: white;
     border: 1px solid black;
 }
