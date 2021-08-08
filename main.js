@@ -1,4 +1,4 @@
-const div = document.querySelector('#grid');
+const div = document.querySelector('#gridContainer');
 
 createGridBoxes(16);
 
