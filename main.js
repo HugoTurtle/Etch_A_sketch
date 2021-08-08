@@ -1,6 +1,8 @@
 const div = document.querySelector('#gridContainer');
 
-createGridBoxes(16);
+let gridSize = prompt("Please enter the grid size (e.g 2 : 2x2, 4 : 4x4) : ")
+
+createGridBoxes(gridSize);
 changeGridBoxColor();
 
 function createGridBoxes(size) {
