@@ -1,6 +1,7 @@
 const div = document.querySelector('#gridContainer');
 
 createGridBoxes(16);
+changeGridBoxColor();
 
 function createGridBoxes(size) {
     div.setAttribute('style', 'grid-template-columns: repeat('+size+', 1fr)');
