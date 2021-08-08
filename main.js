@@ -10,3 +10,9 @@ function createGridBoxes(size) {
                 div.appendChild(gridBox);
     }
 }
+
+function changeGridBoxColor() {
+    let gridBoxes = document.getElementById('gridBox', function(e) {
+
+    });
+}
