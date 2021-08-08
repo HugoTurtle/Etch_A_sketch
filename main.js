@@ -12,7 +12,10 @@ function createGridBoxes(size) {
 }
 
 function changeGridBoxColor() {
-    let gridBoxes = document.getElementById('gridBox', function(e) {
-
+    const gridBoxes = document.querySelectorAll(".gridBox");
+    gridBoxes.forEach((gridBox) => {
+        gridBox.addEventListener("mouseover", (e) => {
+            gridBox.classList.add('active');
+        });
     });
 }
