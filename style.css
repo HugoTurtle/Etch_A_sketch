@@ -1,5 +1,6 @@
 * {
    margin: 0;
+   padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
@@ -15,8 +16,13 @@ body {
     font-family: 'Play', sans-serif;
     -webkit-text-stroke: 1px rgb(214, 214, 214);   
 }
+#main {
+    display: flex;
+    flex-wrap: wrap;
+}
 #gridContainer {
     margin: auto;
+    margin-left: 200px;
     display: grid;
     height: 550px;
     width: 550px;
@@ -33,9 +39,11 @@ body {
     background-color: black;
 }
 #buttonContainer {
-    display: flex;
+    display: inherit;
+    flex-flow: column wrap;
     justify-content: center;
-    padding-bottom: 10px;
+    margin-left: 100px;
+    background-color: khaki;
 }
 button {
     display: block;
@@ -47,7 +55,8 @@ button {
     font-size: 30px;
     border-radius: 5px;
     border: white;
+    margin-top: 100px;
 }
 #clearButton {
-    
+ 
 }
