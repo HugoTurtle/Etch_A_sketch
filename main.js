@@ -4,6 +4,7 @@ let gridSize = prompt("Please enter the grid size (e.g 2 : 2x2, 4 : 4x4, 25 : 25
 
 createGridBoxes(gridSize);
 changeGridBoxColor();
+onClickResetButton();
 
 function createGridBoxes(size) {
     div.setAttribute('style', 'grid-template-columns: repeat('+size+', 1fr)');
@@ -25,6 +26,12 @@ function changeGridBoxColor() {
 function resetGridBoxColor() {
     const gridBoxes = document.querySelectorAll(".active");
     gridBoxes.forEach((gridBox) => {
-        gridBox.classList.remove('.active');
+        gridBox.classList.remove('active');
     });
+}
+function onClickResetButton() {
+    const resetButton = document.getElementById("resetButton");
+        resetButton.onclick = function() {
+            resetGridBoxColor();
+        };
 }
