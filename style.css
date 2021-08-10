@@ -8,10 +8,10 @@ body {
     background-color: #ed2939;
 }
 #title {
-    color: #FFA500;
+    color: #F6BE00;
     text-align: center;
     font-size: 70px;
-    margin: 40px 0px 60px 0px;
+    margin: 40px 0px 40px 0px;
     font-family: 'Play', sans-serif;
     -webkit-text-stroke: 1px rgb(214, 214, 214);   
 }
@@ -31,4 +31,21 @@ body {
 }
 .active {
     background-color: black;
+}
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+button {
+    display: inherit;
+    width: 150px;
+    height: 40px;
+    background-color: whitesmoke;
+    align-items: center;
+    text-indent: 30%;
+    font-size: 30px;
+}
+#resetButton {
+    
 }
