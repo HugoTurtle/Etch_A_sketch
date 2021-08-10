@@ -38,13 +38,15 @@ body {
     padding-bottom: 10px;
 }
 button {
-    display: inherit;
+    display: block;
     width: 150px;
     height: 40px;
     background-color: whitesmoke;
-    align-items: center;
-    text-indent: 30%;
+    cursor: pointer;
+    text-align: center;
     font-size: 30px;
+    border-radius: 5px;
+    border: white;
 }
 #resetButton {
     
