@@ -22,3 +22,9 @@ function changeGridBoxColor() {
         });
     });
 }
+function resetGridBoxColor() {
+    const gridBoxes = document.querySelectorAll(".active");
+    gridBoxes.forEach((gridBox) => {
+        gridBox.classList.remove('.active');
+    });
+}
