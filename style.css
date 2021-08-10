@@ -41,12 +41,15 @@ body {
 #buttonContainer {
     display: inherit;
     flex-flow: column wrap;
-    justify-content: center;
+    width: 160px;
     margin-left: 100px;
-    background-color: khaki;
+    background-color: rgb(48, 47, 47);
+    border-radius: 5px;
+    border: 5px solid #FFFF00;
 }
 button {
     display: block;
+    margin: auto;
     width: 150px;
     height: 40px;
     background-color: whitesmoke;
@@ -54,9 +57,9 @@ button {
     text-align: center;
     font-size: 30px;
     border-radius: 5px;
-    border: white;
-    margin-top: 100px;
+    border: 1px solid black;
+    margin-top: 70px;
 }
-#clearButton {
- 
+#removeGridLines {
+    font-size: 25px;
 }
