@@ -58,8 +58,8 @@ button {
     font-size: 30px;
     border-radius: 5px;
     border: 1px solid black;
-    margin-top: 70px;
+    margin-top: 35px;
 }
-#removeGridLines {
+#toggleGridLines {
     font-size: 25px;
 }
