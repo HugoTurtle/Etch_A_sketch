@@ -6,6 +6,7 @@ onClickClearButton();
 onClickBlackButton();
 onClickEraserButton();
 onClickToggleGridLines();
+onClickResetButton();
 
 function promptUser() {
     let looping = true;
@@ -79,12 +80,18 @@ function onClickBlackButton() {
 function toggleGridLine() {
     const gridBoxes = document.querySelectorAll(".gridBox");
     gridBoxes.forEach((gridBox) => {
-        gridBox.className.toggle('border: 1px solid black');
+        gridBox.classList.toggle('gridBox');
     });
-}
+};
 function onClickToggleGridLines() {
     const toggleGridLines = document.getElementById("toggleGridLines");
         toggleGridLines.onclick = function() {
-            toggleGridLine();
-        }
+            alert("Under Construction");
+        };
 };
+function onClickResetButton() {
+    const resetButton = document.getElementById("resetButton");
+        resetButton.onclick = function() {
+            location.reload();
+        }
+}
