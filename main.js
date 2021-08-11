@@ -3,6 +3,9 @@ const div = document.querySelector('#gridContainer');
 createGridBoxes();
 changeGridBoxColor();
 onClickClearButton();
+onClickBlackButton();
+onClickEraserButton();
+onClickToggleGridLines();
 
 function promptUser() {
     let looping = true;
@@ -52,4 +55,36 @@ function onClickClearButton() {
         clearButton.onclick = function() {
                 clearGridBoxColor();
         };
+};
+function whiteGridBoxColor() {
+    const gridBoxes = document.querySelectorAll(".gridBox");
+    gridBoxes.forEach((gridBox) => {
+        gridBox.addEventListener("mouseover", (e) => {
+            gridBox.classList.remove('active');
+        });
+    });
+};
+function onClickEraserButton() {
+    const eraserButton = document.getElementById("eraseButton");
+        eraserButton.onclick = function() {
+            whiteGridBoxColor();
+        }
+};
+function onClickBlackButton() {
+    const blackButton = document.getElementById("blackColorButton");
+        blackButton.onclick = function() {
+            changeGridBoxColor();
+        }
+};
+function toggleGridLine() {
+    const gridBoxes = document.querySelectorAll(".gridBox");
+    gridBoxes.forEach((gridBox) => {
+        gridBox.className.toggle('border: 1px solid black');
+    });
+}
+function onClickToggleGridLines() {
+    const toggleGridLines = document.getElementById("toggleGridLines");
+        toggleGridLines.onclick = function() {
+            toggleGridLine();
+        }
 };
